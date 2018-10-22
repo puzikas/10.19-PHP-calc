@@ -20,19 +20,16 @@ include('functions.php');
 					<th scope="col">Margin</th>
 					<th scope="col">VAT</th>
 					<th scope="col">Retail</th>
+					<th scope="col">Coef</th>
 				</tr>
 			</thead>
 			<tbody>
-
 				<?php 
 				for ($cp = 10; $cp <= 150; $cp += 10) { 
-					echo "<tr><td>$cp</td><td>" . shipping($cp) . "</td><td>" . margin($cp) . "</td><td>" . vat($cp) . "</td><td>" . retail($cp) . "</td></tr>";
+					echo "<tr><td>$cp</td><td>" . shipping($cp) . "</td><td>" . margin($cp) . "</td><td>" . vat($cp) . "</td><td>" . retail($cp) . "</td><td>" . coef($cp) . "</td></tr>";
 				}
 				?>		
-
-
 			</tbody>
 		</table>
 	</body>
 	</html>
-<!-- <?="Šiandien lauke yra " . getFeel(10) . "<br /";?> -->

@@ -23,3 +23,7 @@ function vat($cp) {
 function retail($cp) {
 	return $cp + shipping($cp) + margin($cp) + vat($cp);
 }
+
+function coef($cp) {
+	return round(10 * ($cp + margin($cp)) / ($cp + shipping($cp))) / 10;
+}
