@@ -25,5 +25,5 @@ function retail($cp) {
 }
 
 function coef($cp) {
-	return round(10 * ($cp + margin($cp)) / ($cp + shipping($cp))) / 10;
+	return round(10 * ($cp + margin($cp) + shipping($cp)) / ($cp + shipping($cp))) / 10;
 }
